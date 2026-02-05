@@ -18,7 +18,7 @@ INDUSTRIAL-KPI-PREDICTOR/
 ├── 📁 data/
 │   ├── train.csv  # (Not included - Confidential)
 │   └── test.csv   # (Not included - Confidential)
-├── submission_xgb_mlp_optimized.py
+├── submission_xgb_mlp_optimized.py # (Not included - Confidential)
 ├── requirements.txt
 └── README.md
 ```
