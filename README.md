@@ -21,6 +21,7 @@ INDUSTRIAL-KPI-PREDICTOR/
 ├── submission_xgb_mlp_optimized.py
 ├── requirements.txt
 └── README.md
+```
 
 ## 🛠️ Script Description
 
