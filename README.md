@@ -1,5 +1,7 @@
 # Hybrid XGBoost & MLP for Industrial KPI Prediction
 
+![Author](https://img.shields.io/badge/author-Adil%20CHOUKAIRE-blue)
+
 This repository contains the source code for a machine learning solution designed to predict key performance indicators (KPIs) for industrial aerospace workshops. The solution was developed during a hackathon to replace time-consuming physical simulations with instant AI inference.
 
 ## 📌 Project Overview
