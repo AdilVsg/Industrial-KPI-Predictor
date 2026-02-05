@@ -24,6 +24,15 @@ INDUSTRIAL-KPI-PREDICTOR/
 ```
 > **⚠️ Data Confidentiality:** The `train.csv` and `test.csv` files contain proprietary industrial data from **Airbus**. For confidentiality reasons, they are **not included** in this repository. To run the script, please place the authorized dataset in the `data/` directory.
 
+## 🎯 Objective
+
+The goal is to predict three industrial targets based on workshop configuration:
+1.  **WIP:** Work In Progress.
+2.  **Investment:** Cost in millions.
+3.  **Satisfaction:** A normalized score [0-1].
+
+**Challenge:** The project is evaluated strictly on the **Satisfaction** accuracy with a tolerance of `0.05`.
+
 ## 🛠️ Script Description
 
 ### `submission_xgb_mlp_optimized.py`
@@ -57,15 +66,6 @@ This is the core script containing the entire pipeline. It implements a **Dual-P
 The script generates a final output file named **`submission_xgb_mlp_optimized.csv`**.
 - This CSV contains the predicted KPIs for the test set.
 - The file is intended to be committed to the evaluation platform, where an external software calculates the final score against the ground truth.
-
-## 🎯 Objective
-
-The goal is to predict three industrial targets based on workshop configuration:
-1.  **WIP:** Work In Progress.
-2.  **Investment:** Cost in millions.
-3.  **Satisfaction:** A normalized score [0-1].
-
-**Challenge:** The project is evaluated strictly on the **Satisfaction** accuracy with a tolerance of `0.05`.
 
 ## ⚠️ Notes
 
