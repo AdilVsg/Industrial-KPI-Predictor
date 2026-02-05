@@ -67,3 +67,9 @@ The goal is to predict three industrial targets based on workshop configuration:
 3.  **Satisfaction:** A normalized score [0-1].
 
 **Challenge:** The project is evaluated strictly on the **Satisfaction** accuracy with a tolerance of `0.05`.
+
+## ⚠️ Notes
+
+- **Performance:** The model achieves a Cross-Validation score of ~0.757.
+- **Resource Usage:** The script is optimized for CPU execution (`n_jobs=-1`) and completes in under 15 minutes.
+- **Configuration:** Ensure the `DATA_DIR` variable in the script points to your local data folder.
