@@ -33,6 +33,13 @@ The goal is to predict three industrial targets based on workshop configuration:
 
 **Challenge:** The project is evaluated strictly on the **Satisfaction** accuracy with a tolerance of `0.05`.
 
+## 🚀 Installation & Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ton-username/industrial-kpi-predictor.git](https://github.com/ton-username/industrial-kpi-predictor.git)
+   cd industrial-kpi-predictor
+
 ## 🛠️ Script Description
 
 ### `submission_xgb_mlp_optimized.py`
