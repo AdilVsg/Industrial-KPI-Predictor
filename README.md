@@ -1,7 +1,8 @@
-# Hybrid XGBoost & MLP for Industrial KPI Prediction
+# INDUSTRIAL-KPI-PREDICTOR
 
 ![Author](https://img.shields.io/badge/Author-Adil%20CHOUKAIRE-blue)
 ![Team](https://img.shields.io/badge/Team-Team%204-blue)
+![Client](https://img.shields.io/badge/Client-Airbus-00205B)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
@@ -10,18 +11,19 @@
 ![LightGBM](https://img.shields.io/badge/LightGBM-4.0-green)
 
 
-Machine Learning solution designed to replace physical industrial simulations by predicting key performance indicators (KPIs) for aerospace workshops. This project implements a **Hybrid Ensemble Strategy** combining Gradient Boosting and Neural Networks.
+Machine Learning solution designed for **Airbus** to replace physical industrial simulations by predicting key performance indicators (KPIs) for aerospace workshops. This project implements a **Hybrid Ensemble Strategy** combining Gradient Boosting and Neural Networks.
 
 ## 📁 Project Structure
 ```bash
 INDUSTRIAL-KPI-PREDICTOR/
 ├── 📁 data/
-│   ├── train.csv
-│   └── test.csv
+│   ├── train.csv  # (Not included - Confidential)
+│   └── test.csv   # (Not included - Confidential)
 ├── submission_xgb_mlp_optimized.py
 ├── requirements.txt
 └── README.md
 ```
+> **⚠️ Data Confidentiality:** The `train.csv` and `test.csv` files contain proprietary industrial data from **Airbus**. For confidentiality reasons, they are **not included** in this repository. To run the script, please place the authorized dataset in the `data/` directory.
 
 ## 🛠️ Script Description
 
@@ -52,6 +54,11 @@ This is the core script containing the entire pipeline. It implements a **Dual-P
 - **Strategy:** Weighted Blending.
 - **Algorithm:** Uses **Nelder-Mead** optimization on Out-Of-Fold (OOF) predictions to dynamically find the best weight distribution between XGBoost and MLP.
 
+#### 5. Output & Submission
+The script generates a final output file named **`submission_xgb_mlp_optimized.csv`**.
+- This CSV contains the predicted KPIs for the test set.
+- The file is intended to be committed to the evaluation platform, where an external software calculates the final score against the ground truth.
+
 ## 🎯 Objective
 
 The goal is to predict three industrial targets based on workshop configuration:
@@ -60,9 +67,3 @@ The goal is to predict three industrial targets based on workshop configuration:
 3.  **Satisfaction:** A normalized score [0-1].
 
 **Challenge:** The project is evaluated strictly on the **Satisfaction** accuracy with a tolerance of `0.05`.
-
-## ⚠️ Notes
-
-- **Performance:** The model achieves a Cross-Validation score of ~0.757.
-- **Resource Usage:** The script is optimized for CPU execution (`n_jobs=-1`) and completes in under 15 minutes.
-- **Configuration:** Ensure the `DATA_DIR` variable in the script points to your local data folder.
