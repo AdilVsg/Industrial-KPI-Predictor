@@ -1,7 +1,6 @@
 # INDUSTRIAL-KPI-PREDICTOR
 
 ![Author](https://img.shields.io/badge/Author-Adil%20CHOUKAIRE-blue)
-![Team](https://img.shields.io/badge/Team-Team%204-blue)
 ![Client](https://img.shields.io/badge/Client-Airbus-00205B)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
