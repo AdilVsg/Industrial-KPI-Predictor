@@ -39,6 +39,15 @@ The goal is to predict three industrial targets based on workshop configuration:
    ```bash
    git clone [https://github.com/ton-username/industrial-kpi-predictor.git](https://github.com/ton-username/industrial-kpi-predictor.git)
    cd industrial-kpi-predictor
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the pipeline:**
+   ```bash
+   python submission_xgb_mlp_optimized.py
+   ```
 
 ## 🛠️ Script Description
 
